@@ -31,10 +31,10 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // Logo at the top
+              
               
               Image.asset('assets/Logo.png', width: 150, height: 150), 
-              // Authorization text
+             
               const SizedBox(height: 20),
               const Text(
                 'Авторизация',
@@ -46,7 +46,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               const SizedBox(height: 30),
         
-              // Email TextField
+             
               TextFormField(
                 style: const TextStyle(color: Colors.white),
                 decoration: InputDecoration(
@@ -61,7 +61,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               const SizedBox(height: 20),
         
-              // Password TextField
+              
               TextFormField(
                 style: const TextStyle(color: Colors.white),
                 decoration: InputDecoration(
@@ -113,7 +113,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               const SizedBox(height: 20),
         
-              // Login Button
+              
               ElevatedButton(
                 onPressed: () {
                  Get.toNamed('/bottomNavigation');  
@@ -162,18 +162,18 @@ class _LoginPageState extends State<LoginPage> {
 Row(
   mainAxisAlignment: MainAxisAlignment.center,
   children: [
-    // Google Button with shadow
+   
     Container(
       height: 90 ,width: 105,
       decoration: BoxDecoration(
-        color: Color(0xFF1E2A38), // Background color matching your design
+        color: Color(0xFF1E2A38), 
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2), // Shadow color
+            color: Colors.black.withOpacity(0.2), 
             spreadRadius: 2,
             blurRadius: 6,
-            offset: Offset(0, 3), // Shadow position
+            offset: Offset(0, 3), 
           ),
         ],
       ),
@@ -183,12 +183,12 @@ Row(
         },
         style: ElevatedButton.styleFrom(
           elevation: 0,
-          shape: CircleBorder(), // Circular button
-          padding: EdgeInsets.all(16), // Size of the button
-          backgroundColor: Color(0xFF1E2A38), // Background color matching your design
+          shape: CircleBorder(), 
+          padding: EdgeInsets.all(16), 
+          backgroundColor: Color(0xFF1E2A38), 
         ),
         child: Image.asset(
-          'assets/google.png', // Path to your Twitter logo asset
+          'assets/google.png', 
           width: 32,
           height: 32,
         ),
@@ -196,33 +196,33 @@ Row(
     ),
     SizedBox(width: 20),
 
-    // Facebook Button with shadow
+   
     Container(
       height: 90 ,width: 105,
       decoration: BoxDecoration(
-        color: Color(0xFF1E2A38), // Background color matching your design
+        color: Color(0xFF1E2A38), 
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2), // Shadow color
+            color: Colors.black.withOpacity(0.2), 
             spreadRadius: 2,
             blurRadius: 6,
-            offset: Offset(0, 3), // Shadow position
+            offset: Offset(0, 3),
           ),
         ],
       ),
       child: ElevatedButton(
         onPressed: () {
-          // Twitter Login
+          
         },
         style: ElevatedButton.styleFrom(
           elevation: 0, 
-          shape: CircleBorder(), // Circular button
-          padding: EdgeInsets.all(16), // Size of the button
-          backgroundColor: Color(0xFF1E2A38), // Background color matching your design
+          shape: CircleBorder(), 
+          padding: EdgeInsets.all(16), 
+          backgroundColor: Color(0xFF1E2A38), 
         ),
         child: Image.asset(
-          'assets/facebook.png', // Path to your Twitter logo asset
+          'assets/facebook.png', 
           width: 32,
           height: 32,
         ),
@@ -241,21 +241,21 @@ Row(
             color: Colors.black.withOpacity(0.2), 
             spreadRadius: 2,
             blurRadius: 6,
-            offset: Offset(0, 3), // Shadow position
+            offset: Offset(0, 3), 
           ),
         ],
       ),
       child: ElevatedButton(
         onPressed: () {
-          // Twitter Login
+          
         },
         style: ElevatedButton.styleFrom(
           elevation: 0,
-          padding: EdgeInsets.all(16), // Size of the button
-          backgroundColor: Color(0xFF1E2A38), // Background color matching your design
+          padding: EdgeInsets.all(16), 
+          backgroundColor: Color(0xFF1E2A38), 
         ),
         child: Image.asset(
-          'assets/twetter.png', // Pa th to your Twitter logo asset
+          'assets/twetter.png', 
           width: 32,
           height: 32,
         ),
@@ -266,7 +266,7 @@ Row(
 
               const SizedBox(height: 30),
                const Text('Новый пользователь?',style: TextStyle(color: Colors.white),),
-              // New User? Register text
+              
               TextButton(
                 onPressed: () {
                   

@@ -1,4 +1,4 @@
-import 'package:enefty_icons/enefty_icons.dart';
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF2C2D3C), // Background color
+      backgroundColor: const Color(0xFF2C2D3C), 
       appBar: AppBar(
         
         backgroundColor: Colors.transparent,
@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              // Welcome and Profile Info
+             
               Row(
                 children: [
                   CircleAvatar(
@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
-              // Notifications and other icons
+             
               Row(
                 children: [
                   Icon(Icons.notifications, color: Colors.white),
@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              // Progress Bar Section
+              
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -86,7 +86,7 @@ class HomePage extends StatelessWidget {
                      
                       const SizedBox(height: 8),
 
-                      // Progress Bar
+                     
                       Container(
                         height: 8,
                         width: MediaQuery.of(context).size.width * 0.62,
@@ -96,7 +96,7 @@ class HomePage extends StatelessWidget {
                         ),
                         child: FractionallySizedBox(
                           alignment: Alignment.centerLeft,
-                          widthFactor: 0.93, // Adjust to represent progress
+                          widthFactor: 0.93,
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
@@ -109,7 +109,7 @@ class HomePage extends StatelessWidget {
                   ),
                    const Text("Уровень 5",
                           style: TextStyle(color: Colors.yellow,)),
-                  // Level Badge
+                  
                   const Column(
                     children: [
                       
@@ -124,17 +124,17 @@ class HomePage extends StatelessWidget {
               ),
               const SizedBox(height: 20),
 
-              // Step Counter and Earned Points
+              
                const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  // Steps
+                  
                   InfoCard(
                     label: "Шагов",
                     value: "53,524",
                     asset: AssetImage('assets/Vector.png'),
                   ),
-                  // Points Earned
+                  
                   InfoCard(
                     label: '''Заработано 
    баллов''',
@@ -145,7 +145,7 @@ class HomePage extends StatelessWidget {
               ),
               const SizedBox(height: 20),
 
-              // Share and Earn Section
+             
               Container(
                 height: 150 ,
                 padding: const EdgeInsets.all(16),
@@ -155,10 +155,10 @@ class HomePage extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
-                    Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Column(
+                        Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(

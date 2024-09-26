@@ -15,7 +15,7 @@ class BoardingPage extends StatelessWidget {
       backgroundColor: Colors.blueGrey[900],
       body: Stack(
         children: [
-          // Background Image
+         
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
@@ -24,14 +24,14 @@ class BoardingPage extends StatelessWidget {
               ),
             ),
           ),
-          // Content Overlay
+          
           Positioned.fill(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Heading Text
+              
                 const Text(
-                  'БЕГ',  // Heading text
+                  'БЕГ',  
                   style: TextStyle(
                     fontSize: 40,
                     color: Colors.white,
@@ -39,7 +39,7 @@ class BoardingPage extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 480) ,
-                // Description Text
+              
                 const Column(
                   children: [
                     Text(
@@ -63,7 +63,7 @@ class BoardingPage extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 35),
-                // Next Button
+            
                 ElevatedButton(
                   onPressed: () {
                     controller.navigateToNextPage();

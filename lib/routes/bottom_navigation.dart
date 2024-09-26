@@ -15,13 +15,13 @@ class CustomBottomNavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Instantiate the BottomNavController using Get.put
+    
     final BottomNavController controller = Get.put(BottomNavController());
 
     return Scaffold(
       extendBody: true,
       body: Obx(() {
-        // Use Obx to reactively rebuild when currentIndex changes
+        
         return _pages[controller.currentIndex.value];
       }),
       bottomNavigationBar: Obx(() {
@@ -31,7 +31,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
           unselectedItemColor: Color.fromARGB(255, 165, 165, 164),
           backgroundColor: Colors.grey.shade800,
           onTap: (index) {
-            controller.changeIndex(index); // Change the index
+            controller.changeIndex(index); 
           },
           items: [
             CrystalNavigationBarItem(

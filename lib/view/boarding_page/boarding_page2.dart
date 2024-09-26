@@ -64,7 +64,7 @@ class BoardingPage2 extends StatelessWidget {
                            Get.toNamed('/LoginPage');  
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xFF6463F5),  // Button color
+                            backgroundColor: const Color(0xFF6463F5), 
                             padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30.0),
@@ -74,7 +74,7 @@ class BoardingPage2 extends StatelessWidget {
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Text(
-                                'Далее',  // Next in Russian
+                                'Далее',  
                                 style: TextStyle(fontSize: 18),
                               ),
                               Icon(Icons.arrow_forward),
@@ -89,8 +89,8 @@ class BoardingPage2 extends StatelessWidget {
             ),
           ),
 
-          // Sign In Section Below the GridView
-          const SizedBox(height: 20),  // Spacing between grid and bottom text
+         
+          const SizedBox(height: 20),  
           Padding(
             padding: const EdgeInsets.only(bottom: 20),
             child: Row(
@@ -102,10 +102,10 @@ class BoardingPage2 extends StatelessWidget {
                 ),
                 TextButton(
                   onPressed: () {
-                    // Action on Sign In
+                    
                   },
                   child: const Text(
-                    'Авторизоваться',  // Sign in in Russian
+                    'Авторизоваться',  
                     style: TextStyle(color: Color(0xFF6463F5)),
                   ),
                 ),
